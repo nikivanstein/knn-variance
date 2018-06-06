@@ -25,7 +25,7 @@ and
 
 
 
-<p align="center"><img width=60% src="https://github.com/Basvanstein/knn-variance/blob/master/examples/example7.png"></p>
+<p align="center"><img width=100% style="margin-top:20px;margin-bottom:20px;" src="https://github.com/Basvanstein/knn-variance/blob/master/examples/example7.png"></p>
 
 
 
