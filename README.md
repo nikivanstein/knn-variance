@@ -2,8 +2,7 @@
 Model independent heuristic estimation of prediction errors
 
 
-![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
-[![GitHub Issues](https://img.shields.io/github/issues/Basvanstein/knn-variance.svg)](https://github.com/wangronin/MIP-EGO/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/Basvanstein/knn-variance.svg)](https://github.com/Basvanstein/knn-variance/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
