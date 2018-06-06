@@ -4,6 +4,8 @@ Model independent heuristic estimation of prediction errors
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+
+
 ## Overview
 
 For most regression models, their overall accuracy can be estimated with help of various error measures. However, in some applications it is important to provide not only point predictions, but also to estimate the ``uncertainty'' of the prediction, e.g., in terms of confidence intervals, variances, or interquartile ranges.  There are very few statistical modeling techniques able to achieve this. For instance, the Kriging/Gaussian Process method is equipped with a theoretical mean squared error. In this paper we address this problem by introducing a heuristic method to estimate the uncertainty of the prediction, based on the error information from the k-nearest neighbours. This heuristic, called the **k-NN uncertainty measure**, is computationally much cheaper than other approaches (e.g., bootstrapping) and can be applied regardless of the underlying regression model. To validate and demonstrate the usefulness of the proposed heuristic, it is combined with various models and plugged into the well-known Efficient Global Optimization algorithm (EGO). Results demonstrate that using different models with the proposed heuristic can improve the convergence of EGO significantly.
@@ -20,6 +22,10 @@ Where
 <a href="https://www.codecogs.com/eqnedit.php?latex=w_i&space;=1&space;-&space;\frac{d(\mathbf{x}_i,&space;\mathbf{x})}{\sum\limits_{i\in&space;N(\mathbf{x})}d(\mathbf{x}_i,\mathbf{x})}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w_i&space;=1&space;-&space;\frac{d(\mathbf{x}_i,&space;\mathbf{x})}{\sum\limits_{i\in&space;N(\mathbf{x})}d(\mathbf{x}_i,\mathbf{x})}" title="w_i =1 - \frac{d(\mathbf{x}_i, \mathbf{x})}{\sum\limits_{i\in N(\mathbf{x})}d(\mathbf{x}_i,\mathbf{x})}" /></a>
 and 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\widehat{\sigma}&space;=&space;\sqrt{\Var\left[\{y_i\}_{i\in&space;N(\mathbf{x})}\cup\{\hat{f}(\mathbf{x})\}\right]}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\widehat{\sigma}&space;=&space;\sqrt{\Var\left[\{y_i\}_{i\in&space;N(\mathbf{x})}\cup\{\hat{f}(\mathbf{x})\}\right]}" title="\widehat{\sigma} = \sqrt{\Var\left[\{y_i\}_{i\in N(\mathbf{x})}\cup\{\hat{f}(\mathbf{x})\}\right]}" /></a>
+
+
+
+<p align="center"><img width=60% src="https://github.com/Basvanstein/knn-variance/blob/master/examples/example7.png"></p>
 
 
 
