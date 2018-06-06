@@ -2,8 +2,6 @@
 Model independent heuristic estimation of prediction errors
 
 
-[![GitHub Issues](https://img.shields.io/github/issues/Basvanstein/knn-variance.svg)](https://github.com/Basvanstein/knn-variance/issues)
-![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
