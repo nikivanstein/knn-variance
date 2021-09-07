@@ -39,9 +39,10 @@ The uncertainty measure is also given as a python function below:
 ```python
 def knnUncertainty(k,pred,x,y):
     #The measure of how certain a give prediction is given its k neighbours
+    # Given X (capital X) is the set of known points (training data).
     #k is the number of neighbours taken into account
     #pred is the predicted point
-    #x is the set of known points (input)
+    #x is the set of newly predicted points (input)
     #y is the set of known points (output)
     no = MinMaxScaler(copy=True)
     nbrs = NearestNeighbors(n_neighbors=k, algorithm='ball_tree').fit(no.fit_transform(X))
